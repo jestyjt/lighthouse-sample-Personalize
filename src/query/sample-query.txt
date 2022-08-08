@@ -1,0 +1,3 @@
+{
+  "query": "query {item(path: \"/sitecore/content/Demo SXA Sites/LighthouseLifestyle/home/articles/Is a travel wallet worth it\", language: \"en\") {url {path} title: field(name: \"title\") {value} intro: field(name: \"Introduction\") {value}image: field(name: \"image\") {jsonValue}}}"
+}
