@@ -1,0 +1,17 @@
+<#-- Construct the API response using Freemarker -->
+<#-- For your Experience to run your API tab must have, at a minimum, open and closing brackets -->
+
+
+<#assign MyVariable = getDecisionModelResultNode("LighthouseTravelPromo1CD")>
+{
+    "CTAtitle": "${MyVariable.outputs[0].lighthousetravelpromo1cd.data.item.title.value!}", 
+    
+    "CTAimage": "${MyVariable.outputs[0].lighthousetravelpromo1cd.data.item.image.jsonValue.value.src!}", 
+    
+    "CTAimageAlt": "${MyVariable.outputs[0].lighthousetravelpromo1cd.data.item.image.jsonValue.value.alt!}",
+    "CTAimageHeight": "${MyVariable.outputs[0].lighthousetravelpromo1cd.data.item.image.jsonValue.value.height!}",
+    "CTAimageWidth": "${MyVariable.outputs[0].lighthousetravelpromo1cd.data.item.image.jsonValue.value.width!}",
+    
+    "CTAintro": "${MyVariable.outputs[0].lighthousetravelpromo1cd.data.item.intro.value!}",
+    "CTAlink": "${MyVariable.outputs[0].lighthousetravelpromo1cd.data.item.url.path!}"
+}
